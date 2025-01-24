@@ -1,0 +1,80 @@
+
+h2{
+    margin-bottom: 20px;
+}
+
+/* .menubar container */
+.menubar {
+    position: absolute;
+    top : 10px;
+    left : 40px;
+    width: 50%;
+    display: flex;
+
+  }
+  
+  /* Menu button (SVG icon) */
+  .menu-btn {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* The menu container */
+  .list-container {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 50px; /* Adjust based on your layout */
+    left: 0;
+    background-color: #333;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    padding: 10px;
+  
+    ul {
+      list-style: none;
+      padding: 10px 0;
+      margin: 0;
+      text-align: left;
+  
+      li {
+        padding: 10px;
+        text-align: center;
+  
+        a {
+            padding: 5px;
+          color: white;
+          text-decoration: none;
+          display: block;
+        }
+  
+        a:hover {
+          background-color: #555;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+  
+  /* When the menu is open, display it */
+  .list-container.open {
+    display: block;
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  /* Slide-in animation */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
