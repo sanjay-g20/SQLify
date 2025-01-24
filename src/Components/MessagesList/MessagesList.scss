@@ -1,0 +1,40 @@
+.messages-container{
+    height: 500px;
+    max-height: 500px;
+    overflow-y: scroll;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    // box-shadow: 5px 10px 20px red inset;
+
+    .message-pair {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .message-ans,.message-query{
+        border-radius: 12px;
+        // margin: 5px 10px;
+        padding: 10px;
+        text-align: start;
+        box-shadow: 0 0 2px rgb(62, 62, 62);
+        background-color: #e2e2e2;
+        color: black;
+    }
+
+    .message-query{
+        align-self: flex-end;
+        min-width: 100px;
+        white-space: pre-wrap;
+    }
+
+    .message-ans{
+        align-self: flex-start;
+        width : 80%;
+    }
+
+}
+
