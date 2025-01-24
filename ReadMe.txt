@@ -1,0 +1,1 @@
+SQLify application is to convert text to sql query
